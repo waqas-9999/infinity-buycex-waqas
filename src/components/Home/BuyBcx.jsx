@@ -99,7 +99,7 @@ export default function BuyBcx() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-white/80 text-xl lg:text-2xl mb-16 max-w-3xl mx-auto leading-relaxed"
         >
-          BCX is BuyCex Infinity Chain's native gas token. It's the key to the blockchain's operation and governance.
+          BCX is the native token of BuyCex Infinity Chain — the core asset powering the blockchain’s operations, governance, and utility. It also fuels the BuyCex Exchange, unlocking real use cases across both chain and platform.
         </motion.p>
 
         {/* Token Price Card */}

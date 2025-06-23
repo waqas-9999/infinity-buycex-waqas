@@ -86,7 +86,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-4xl md:text-6xl sm:text-8xl font-light text-white mb-8 max-w-5xl leading-tight relative z-10"
+          className="text-4xl md:text-7xl sm:text-8xl font-light text-white mb-8 max-w-5xl leading-tight relative z-10"
         >
           <motion.span
             animate={{
@@ -109,9 +109,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-white/90 text-sm md:text-xl max-w-2xl mb-12 leading-relaxed relative z-10"
         >
-          <p className="mb-2 font-medium">Crypto is fragmented today, but it doesn't need to be.
-          For the first time, build projects, create value, and
-          exchange assets on the same hyper-performant chain.</p>
+          <p className="mb-2 font-medium">Build without limits, trade with confidence, and own a piece of the future all on BuyCex Infinity Chain, a high-performance blockchain engineered for scale, speed, and real financial ownership.</p>
         </motion.div>
 
         {/* Action Buttons */}

@@ -11,9 +11,9 @@ export default function UpdatesSection() {
     const updates = [
         {
             icon: Flame,
-            title: "Plans for further destruction of Gate Token (GT)",
+            title: "Plans for further destruction of BuyCex Token (BCX)",
             description:
-                "GT is a utility token on BuyCex Infinity Chain, with a total issuance of 300 million, which has been deflated to less than 133 million, and the...",
+                "BCX is a utility token on BuyCex Infinity Chain, with a total issuance of 300 million, which has been deflated to less than 133 million, and the...",
             date: "Dec 2024",
             category: "Tokenomics",
         },
@@ -27,9 +27,9 @@ export default function UpdatesSection() {
         },
         {
             icon: Calendar,
-            title: "Announcement of on-chain burning of Gate Token (GT) in the fourth quarter of...",
+            title: "Announcement of on-chain burning of BuyCex Token (BCX) in the fourth quarter of...",
             description:
-                "Gate Token (GT) on-chain burning for the fourth quarter of 2024 has been completed, with 2,904,885.4321514 GT transferred to the...",
+                "BuyCex Token (BCX) on-chain burning for the fourth quarter of 2024 has been completed, with 2,904,885.4321514 BCX transferred to the...",
             date: "Oct 2024",
             category: "Burning",
         },
@@ -73,7 +73,7 @@ export default function UpdatesSection() {
             {/* Floating Update Icons */}
             <div className="absolute inset-0 z-0">
                 {isInView &&
-                    Array.from({ length: 12 }).map((_, i) => (
+                    Array.from({ lenBCXh: 12 }).map((_, i) => (
                         <motion.div
                             key={i}
                             className="absolute text-white/5 select-none pointer-events-none"
@@ -258,7 +258,7 @@ export default function UpdatesSection() {
                                     animate={{ opacity: 1 }}
                                     transition={{ delay: 1 + index * 0.3 }}
                                 >
-                                    {Array.from({ length: 3 }).map((_, i) => (
+                                    {Array.from({ lenBCXh: 3 }).map((_, i) => (
                                         <motion.div
                                             key={i}
                                             className="absolute w-1 h-1 rounded-full opacity-40"

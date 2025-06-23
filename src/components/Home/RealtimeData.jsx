@@ -225,7 +225,7 @@ export default function RealtimeDataSection() {
             className="text-center group"
           >
             <motion.div
-              className="text-2xl sm:text-5xl font-bold text-white mb-4 font-mono"
+              className="text-2xl sm:text-3xl  font-bold text-white mb-4 font-mono"
               whileHover={{ scale: 1.05 }}
               animate={
                 isInView
@@ -263,7 +263,7 @@ export default function RealtimeDataSection() {
             className="text-center group"
           >
             <motion.div
-              className="text-2xl sm:text-5xl font-bold text-white mb-4 font-mono"
+              className="text-2xl sm:text-3xl  font-bold text-white mb-4 font-mono"
               whileHover={{ scale: 1.05 }}
               animate={
                 isInView
@@ -301,7 +301,7 @@ export default function RealtimeDataSection() {
             className="text-center group"
           >
             <motion.div
-              className="text-2xl sm:text-5xl font-bold text-white mb-4 font-mono"
+              className="text-2xl sm:text-3xl  font-bold text-white mb-4 font-mono"
               whileHover={{ scale: 1.05 }}
               animate={
                 isInView
@@ -339,7 +339,7 @@ export default function RealtimeDataSection() {
             className="text-center group"
           >
             <motion.div
-              className="text-2xl sm:text-5xl font-bold text-white mb-4 font-mono"
+              className="text-2xl sm:text-3xl  font-bold text-white mb-4 font-mono"
               whileHover={{ scale: 1.05 }}
               animate={
                 isInView
