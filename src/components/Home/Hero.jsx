@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { ArrowRight, Infinity } from "lucide-react"
 import { useEffect, useState } from "react"
 import Navbar from "../global/Navbar"
-import InfinitySymbol from "../global/infinity"
+import InfinitySymbol from "../global/InfinitySymbol"
 
 export default function HeroSection() {
   const [mounted, setMounted] = useState(false)
