@@ -232,17 +232,6 @@ export default function BuyBcx() {
             <ArrowRight className="w-5 h-5 rotate-180 group-hover:text-yellow-400 transition-colors" />
             <span className="text-lg font-medium">BCX Buy-back & Burn report</span>
           </motion.a>
-
-          {/* View Contract Address */}
-          <motion.a
-            href="#"
-            className="flex items-center gap-3 text-white/70 hover:text-white transition-all duration-300 group"
-            whileHover={{ x: 5 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <span className="text-lg font-medium">View contract address</span>
-            <ArrowRight className="w-5 h-5 group-hover:text-yellow-400 transition-colors" />
-          </motion.a>
         </motion.div>
       </div>
     </div>

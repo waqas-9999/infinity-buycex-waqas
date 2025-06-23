@@ -86,7 +86,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-4xl md:text-7xl sm:text-8xl font-light text-white mb-8 max-w-5xl leading-tight relative z-10"
+          className="text-4xl md:text-6xl sm:text-8xl font-light text-white mb-8 max-w-5xl leading-tight relative z-10"
         >
           <motion.span
             animate={{
@@ -98,7 +98,7 @@ export default function HeroSection() {
             }}
             transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
           >
-            The Blockchain To House All Finance
+            The Chain That Lets You Own the World’s Value Layer
           </motion.span>
         </motion.h1>
 
@@ -137,7 +137,7 @@ export default function HeroSection() {
                 e.currentTarget.style.boxShadow = "0 4px 6px -1px rgba(0, 0, 0, 0.1)"
               }}
             >
-              Start Trading
+              Start Building
                   <ArrowRight className="ml-2 w-5 h-5" />
             </button>
           </motion.div>
