@@ -153,7 +153,7 @@ export default function DevelopRewardsSection() {
                             We empower builders like you to shape the future of
                             decentralized finance. BuyCex Infinity Chain offers
                             the tools, scalability, and ownership incentives to
-                            launch, grow, and thrive — all while unlocking
+                            launch, grow, and thrive all while unlocking
                             powerful rewards for your community.
                         </motion.p>
 

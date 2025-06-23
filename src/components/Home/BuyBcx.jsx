@@ -88,7 +88,7 @@ export default function BuyBcx() {
             }
             transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 1 }}
           >
-            BCX, <span style={{ color: "#efb81c" }}>BuyCex Infinity Chain's</span> cornerstone
+            BCX, <span style={{ color: "#efb81c" }}>BuyCex Infinity Chain</span> cornerstone
           </motion.span>
         </motion.h2>
 
