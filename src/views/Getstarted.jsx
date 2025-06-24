@@ -1,4 +1,3 @@
-import React from 'react'
 import DeveloperPage from '../components/GetStarted'
 
 function Getstarted() {
