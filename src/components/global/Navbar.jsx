@@ -14,7 +14,7 @@ export default function Navbar() {
     dropdown: [
       {
         name: "Get Started Now",
-        href: "#",
+        href: "/get-started",
         description: "Start building on BuyCex"
       },
       {

@@ -1,5 +1,7 @@
+import DeveloperPage from '../components/GetStarted';
 import PrivacyPolicy from '../components/PrivacyPolicy/Index';
 import TermsofService from '../components/TermsConditions/Index';
+import Getstarted from '../views/Getstarted';
 import Home from '../views/Home';
 
 
@@ -19,6 +21,11 @@ let routes = [
 	{
 		path: '/terms-service',
 		component: TermsofService,
+		layout: 'main',
+	},
+	{
+		path: '/get-started',
+		component: Getstarted,
 		layout: 'main',
 	},
 	
