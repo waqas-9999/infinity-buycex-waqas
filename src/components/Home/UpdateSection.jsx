@@ -115,7 +115,7 @@ export default function UpdatesSection() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-2xl sm:text-6xl font-bold text-white mb-4">
+                    <h2 className="text-2xl sm:text-6xl text-start sm:text-center font-bold text-white mb-4">
                         <motion.span
                             animate={
                                 isInView
@@ -147,7 +147,7 @@ export default function UpdatesSection() {
                                 : { opacity: 0, y: 20 }
                         }
                         transition={{ duration: 0.6, delay: 0.6 }}
-                        className="text-white/70 text-sm sm:text-lg max-w-2xl mx-auto"
+                        className="text-white/70 text-start sm:text-center text-sm sm:text-lg max-w-2xl mx-auto"
                     >
                         Stay informed with the latest developments, upgrades,
                         and announcements from the BuyCex Infinity Chain

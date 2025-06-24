@@ -72,7 +72,7 @@ export default function BuyBcx() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-2xl sm:text-6xl font-bold text-white mb-8 leading-tight"
+          className="text-2xl sm:text-6xl text-start sm:text-center font-bold text-white mb-4 sm:mb-8 leading-tight"
         >
           <motion.span
             animate={
@@ -97,7 +97,7 @@ export default function BuyBcx() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-white/80 text-xl lg:text-2xl mb-16 max-w-3xl mx-auto leading-relaxed"
+          className="text-white/80 text-start sm:text-center text-sm lg:text-2xl mb-8 sm:mb-16 max-w-3xl mx-auto leading-relaxed"
         >
           BCX is the native token of BuyCex Infinity Chain — the core asset powering the blockchain’s operations, governance, and utility. It also fuels the BuyCex Exchange, unlocking real use cases across both chain and platform.
         </motion.p>
@@ -107,10 +107,10 @@ export default function BuyBcx() {
           initial={{ opacity: 0, scale: 0.9, y: 50 }}
           animate={isInView ? { opacity: 1, scale: 1, y: 0 } : { opacity: 0, scale: 0.9, y: 50 }}
           transition={{ duration: 1, delay: 0.6, type: "spring", stiffness: 100 }}
-          className="relative max-w-2xl mx-auto mb-16"
+          className="relative max-w-2xl mx-auto mb-8 sm:mb-16"
         >
           {/* Card Background */}
-          <div className="relative bg-gray-900/40 backdrop-blur-sm border border-gray-700/30 rounded-3xl p-8 lg:p-12 overflow-hidden">
+          <div className="relative bg-gray-900/40 backdrop-blur-sm border border-gray-700/30 rounded-3xl p-4 sm:p-8 lg:p-12 overflow-hidden">
             {/* Card Glow Effect */}
             <motion.div
               className="absolute inset-0 rounded-3xl opacity-0"
@@ -125,12 +125,12 @@ export default function BuyBcx() {
               transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 2 }}
             />
 
-            <div className="flex items-center justify-between gap-8">
+            <div className="flex items-center justify-between gap-4 sm:gap-8">
               {/* Token Icon and Price */}
               <div className="flex items-center gap-6">
                 {/* Token Icon */}
                 <motion.div
-                  className="w-16 h-16 lg:w-20 lg:h-20 rounded-2xl flex items-center justify-center relative"
+                  className="w-10 h-10 lg:w-20 lg:h-20 rounded-md sm:rounded-2xl flex items-center justify-center relative"
                   style={{ backgroundColor: "#efb81c20" }}
                   animate={
                     isInView
@@ -141,12 +141,11 @@ export default function BuyBcx() {
                   }
                   transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 1.5 }}
                 >
-                  {/* <Coins className="w-8 h-8 lg:w-10 lg:h-10" style={{ color: "#efb81c" }} /> */}
-                  <img src={Bcx} alt='Bcx' className="w-8 h-8 lg:w-10 lg:h-10" />
+                  <img src={Bcx} alt='Bcx' className="w-4 h-4 lg:w-10 lg:h-10" />
 
                   {/* Rotating Ring */}
                   <motion.div
-                    className="absolute inset-0 border-2 rounded-2xl opacity-30"
+                    className="absolute inset-0 border-2 rounded-md sm:rounded-2xl opacity-30"
                     style={{ borderColor: "#efb81c" }}
                     animate={{ rotate: 360 }}
                     transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
@@ -156,7 +155,7 @@ export default function BuyBcx() {
                 {/* Price Display */}
                 <div className="text-left">
                   <motion.div
-                    className="text-4xl lg:text-5xl font-bold text-white font-mono"
+                    className="text-2xl lg:text-5xl font-bold text-white font-mono"
                     animate={
                       isInView
                         ? {
@@ -194,7 +193,7 @@ export default function BuyBcx() {
               >
                 <button
                   size="lg"
-                  className="text-black rounded-md cursor-pointer font-semibold px-8 py-4 text-lg transition-all duration-300 shadow-lg"
+                  className="text-black rounded-md cursor-pointer font-semibold px-4 sm:px-8 py-4 text-sm sm:text-lg transition-all duration-300 shadow-lg"
                   style={{
                     backgroundColor: "#efb81c",
                     borderColor: "#efb81c",
@@ -230,7 +229,7 @@ export default function BuyBcx() {
             whileTap={{ scale: 0.95 }}
           >
             <ArrowRight className="w-5 h-5 rotate-180 group-hover:text-yellow-400 transition-colors" />
-            <span className="text-lg font-medium">BCX Buy-back & Burn report</span>
+            <span className="text-sm sm:text-lg font-medium">BCX Buy-back & Burn report</span>
           </motion.a>
         </motion.div>
       </div>

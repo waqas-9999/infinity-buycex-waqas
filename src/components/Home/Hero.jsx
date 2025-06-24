@@ -5,6 +5,7 @@ import { ArrowRight, Infinity } from "lucide-react"
 import { useEffect, useState } from "react"
 import Navbar from "../global/Navbar"
 import InfinitySymbol from "../global/InfinitySymbol"
+import { Link } from 'react-router-dom';
 
 export default function HeroSection() {
   const [mounted, setMounted] = useState(false)
@@ -117,11 +118,12 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="flex gap-4 relative z-10"
+          className="flex flex-col sm:flex-row gap-4 relative z-10"
         >
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Link className='w-full min-w-52'>
             <button
-              className="text-black flex items-center text-sm sm:text-lg font-semibold px-3 sm:px-10 py-4 rounded-md transition-all duration-300 shadow-lg"
+              className="text-black min-w-60 flex justify-center items-center text-sm sm:text-lg font-semibold px-3 sm:px-10 py-4 rounded-md transition-all duration-300 shadow-lg"
               style={{
                 backgroundColor: "#efb81c",
                 borderColor: "#efb81c",
@@ -138,7 +140,9 @@ export default function HeroSection() {
               Start Building
                   <ArrowRight className="ml-2 w-5 h-5" />
             </button>
+            </Link>
           </motion.div>
+          <Link to="/earn/bcx-zone" className="border border-[#efb81c] py-4 flex justify-center items-center text-sm sm:text-lg rounded-md hover:bg-[#efb81c] hover:text-black font-semibold transition-all duration-300 text-[#efb81c] px-6"><button className="flex items-center">BCX Holders Benefits <ArrowRight className="ml-2 mt-0.5 w-5 h-5" /></button></Link> 
         </motion.div>
       </div>
     </div>
