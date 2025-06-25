@@ -1,6 +1,7 @@
 import DeveloperPage from '../components/GetStarted';
 import PrivacyPolicy from '../components/PrivacyPolicy/Index';
 import TermsofService from '../components/TermsConditions/Index';
+import EcoSystemProject from '../views/EcoSystemProject';
 import Getstarted from '../views/Getstarted';
 import Home from '../views/Home';
 
@@ -26,6 +27,11 @@ let routes = [
 	{
 		path: '/get-started',
 		component: Getstarted,
+		layout: 'main',
+	},
+	{
+		path: '/eco-system-project',
+		component: EcoSystemProject,
 		layout: 'main',
 	},
 	

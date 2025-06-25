@@ -45,7 +45,7 @@ export default function Navbar() {
             dropdown: [
                 {
                     name: "Ecosystem Projects",
-                    href: "#",
+                    href: "/eco-system-project",
                     description: "Browse live dApps",
                 },
                 {
@@ -110,7 +110,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="relative z-30 flex items-center justify-between px-6 py-4 max-w-7xl mx-auto"
+            className="relative z-30 flex items-center justify-between px-6 py-4 container mx-auto"
         >
             {/* Logo Section */}
             <Link to="/">

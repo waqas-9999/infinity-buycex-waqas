@@ -36,8 +36,6 @@ export default function Footer() {
     resources: [
       { name: "Whitepaper", href: "#" },
       { name: "Blog", href: "#" },
-      { name: "Help Center", href: "#" },
-      { name: "Status Page", href: "#" },
     ],
     company: [
       { name: "About Us", href: "#" },

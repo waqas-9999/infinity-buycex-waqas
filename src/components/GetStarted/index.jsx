@@ -844,7 +844,7 @@ export default function DeveloperPage() {
                     {/* Content */}
                     <h3 className="text-lg sm:text-2xl font-bold text-white mb-4">Build dApps</h3>
                     <p className="text-white/70 text-sm sm:text-lg leading-relaxed mb-6">
-                      Find everything you need to start building on GateChain today.
+                      Find everything you need to start building on BCX Infinity today.
                     </p>
                   </div>
 
