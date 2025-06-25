@@ -14,6 +14,7 @@ import {
   Users,
   Zap,
 } from "lucide-react"
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   const sectionRef = useRef(null)
@@ -118,7 +119,7 @@ export default function Footer() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-2xl sm:text-4xl font-bold text-white mb-4"
+              className="text-2xl sm:text-4xl text-start sm:text-center font-bold text-white mb-4"
             >
               Stay Updated with{" "}
               <motion.span
@@ -139,7 +140,7 @@ export default function Footer() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="text-white/70 text-sm sm:text-lg mb-8"
+              className="text-white/70 text-start sm:text-center text-sm sm:text-lg mb-8"
             >
               Get the latest updates, announcements, and developer resources delivered to your inbox.
             </motion.p>
@@ -188,15 +189,12 @@ export default function Footer() {
             >
               {/* Logo */}
               <div className="flex items-center space-x-3">
-                <motion.div
-                  className="w-10 h-10 rounded-full flex items-center justify-center"
-                  style={{ backgroundColor: "#efb81c" }}
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
+                <div
+                  className="w-16 h-12 flex items-center justify-center"
                 >
-                  <div className="w-5 h-5 bg-black rounded-full"></div>
-                </motion.div>
-                <span className="text-white text-2xl font-bold">BuyCex Infinity Chain</span>
+                  <Link to="/"><img src="/img/BUYCEX-INFINITY.png" alt="BuycexInfinityLogo" /></Link>
+                </div>
+                <h1 className="text-white text-3xl font-bold">BCX Infinity</h1>
               </div>
 
               <p className="text-white/70 text-sm sm:text-lg leading-relaxed max-w-md">

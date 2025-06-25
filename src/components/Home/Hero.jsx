@@ -142,7 +142,7 @@ export default function HeroSection() {
             </button>
             </Link>
           </motion.div>
-          <Link to="/earn/bcx-zone" className="border border-[#efb81c] py-4 flex justify-center items-center text-sm sm:text-lg rounded-md hover:bg-[#efb81c] hover:text-black font-semibold transition-all duration-300 text-[#efb81c] px-6"><button className="flex items-center">BCX Holders Benefits <ArrowRight className="ml-2 mt-0.5 w-5 h-5" /></button></Link> 
+          <a href="https://buycex.com/earn/bcx-zone" className="border border-[#efb81c] py-4 flex justify-center items-center text-sm sm:text-lg rounded-md hover:bg-[#efb81c] hover:text-black font-semibold transition-all duration-300 text-[#efb81c] px-6"><button className="flex items-center">BCX Holders Benefits <ArrowRight className="ml-2 mt-0.5 w-5 h-5" /></button></a> 
         </motion.div>
       </div>
     </div>

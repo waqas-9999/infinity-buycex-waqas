@@ -2,6 +2,7 @@
 import { motion } from "framer-motion"
 import { useState, useRef, useEffect } from "react"
 import { ChevronDown, Infinity } from "lucide-react"
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [activeDropdown, setActiveDropdown] = useState(null)
@@ -14,7 +15,7 @@ export default function Navbar() {
     dropdown: [
       {
         name: "Get Started Now",
-        href: "/get-started", 
+        href: "/get-started",
         description: "Start building on BuyCex"
       },
       {
@@ -110,14 +111,12 @@ export default function Navbar() {
       {/* Logo Section */}
       <motion.div className="flex items-center space-x-2" whileHover={{ scale: 1.05 }}>
         <motion.div
-          className="w-8 h-8 rounded-full flex items-center justify-center"
-          style={{ backgroundColor: "#efb81c" }}
-          animate={{ rotate: 360 }}
-          transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
+          className="w-16 h-12 flex items-center justify-center"
         >
-          <Infinity className="w-5 h-5 text-black" />
+         <Link to="/"><img src="/img/BUYCEX-INFINITY.png" alt="BuycexInfinityLogo" /></Link>
         </motion.div>
-        <span className="text-white text-xl font-semibold">GateChain</span>
+                <h1 className="text-white text-3xl font-bold">BCX Infinity</h1>
+
       </motion.div>
 
       {/* Desktop Navigation */}
