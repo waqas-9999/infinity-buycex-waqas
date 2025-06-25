@@ -188,14 +188,16 @@ export default function Footer() {
               className="lg:col-span-2 space-y-6"
             >
               {/* Logo */}
+              <Link to="/">
               <div className="flex items-center space-x-3">
                 <div
-                  className="w-16 h-12 flex items-center justify-center"
+                  className="w-12 h-12 flex items-center justify-center"
                 >
-                  <Link to="/"><img src="/img/BUYCEX-INFINITY.png" alt="BuycexInfinityLogo" /></Link>
+                  <img src="/img/BUYCEX-INFINITY.png" alt="BuycexInfinityLogo" />
                 </div>
-                <h1 className="text-white text-3xl font-bold">BCX Infinity</h1>
+                <h1 className="text-white text-2xl font-bold">BCX Infinity</h1>
               </div>
+              </Link>
 
               <p className="text-white/70 text-sm sm:text-lg leading-relaxed max-w-md">
                 The blockchain built for infinite possibilities. Fast, secure, and reliable infrastructure for the

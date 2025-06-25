@@ -109,15 +109,18 @@ export default function Navbar() {
       className="relative z-30 flex items-center justify-between px-6 py-4 max-w-7xl mx-auto"
     >
       {/* Logo Section */}
+      <Link to="/">
       <motion.div className="flex items-center space-x-2" whileHover={{ scale: 1.05 }}>
         <motion.div
-          className="w-16 h-12 flex items-center justify-center"
+          className="w-12 h-12 flex items-center justify-center"
         >
-         <Link to="/"><img src="/img/BUYCEX-INFINITY.png" alt="BuycexInfinityLogo" /></Link>
+         <img src="/img/BUYCEX-INFINITY.png" alt="BuycexInfinityLogo" />
         </motion.div>
-                <h1 className="text-white text-3xl font-bold">BCX Infinity</h1>
+                <h1 className="text-white text-2xl font-bold">BCX Infinity</h1>
 
       </motion.div>
+      </Link>
+
 
       {/* Desktop Navigation */}
       <div className="hidden md:flex items-center space-x-8 relative">
