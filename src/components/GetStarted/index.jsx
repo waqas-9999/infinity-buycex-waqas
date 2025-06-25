@@ -99,7 +99,7 @@ export default function DeveloperPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section ref={heroRef} className="relative overflow-hidden py-20">
+      <section ref={heroRef} className="relative overflow-hidden py-8 sm:py-20">
         {/* Background Effects */}
         <div className="absolute inset-0 z-0">
           <motion.div
@@ -153,7 +153,7 @@ export default function DeveloperPage() {
         </div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-6 sm:gap-16 items-center">
             {/* Left Content */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -166,7 +166,7 @@ export default function DeveloperPage() {
                   initial={{ opacity: 0, y: 30 }}
                   animate={isHeroInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
-                  className="text-6xl lg:text-7xl font-bold text-white leading-tight mb-4"
+                  className="text-4xl md:text-7xl sm:text-8xl font-bold text-white leading-tight mb-2 sm:mb-4"
                 >
                   Build Beyond Go
                 </motion.h1>
@@ -174,7 +174,7 @@ export default function DeveloperPage() {
                   initial={{ opacity: 0, y: 30 }}
                   animate={isHeroInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                   transition={{ duration: 0.8, delay: 0.6 }}
-                  className="text-5xl lg:text-6xl font-bold leading-tight"
+                  className="text-4xl md:text-7xl sm:text-8xl font-bold leading-tight"
                   style={{ color: "#efb81c" }}
                 >
                   <motion.span
@@ -196,7 +196,7 @@ export default function DeveloperPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isHeroInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
-                className="text-white/80 text-xl leading-relaxed max-w-lg"
+                className="text-white/80 text-md sm:text-xl leading-relaxed max-w-lg"
               >
                 From idea to impact — build, deploy, and scale with BCX Infinity. Unlock the potential of new horizons
               </motion.p>
@@ -302,7 +302,7 @@ export default function DeveloperPage() {
       </section>
 
       {/* Start Now Section */}
-      <section ref={startRef} className="py-20 relative overflow-hidden">
+      <section ref={startRef} className="py-8 sm:py-20 relative overflow-hidden">
         {/* Background Effects */}
         <div className="absolute inset-0 z-0">
           <motion.div
@@ -322,9 +322,9 @@ export default function DeveloperPage() {
             initial={{ opacity: 0, y: 50 }}
             animate={isStartInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-center mb-16"
+            className="text-center mb-8 sm:mb-16"
           >
-            <h2 className="text-5xl lg:text-6xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-6xl font-bold text-start sm:text-center text-white mb-0 sm:mb-4">
               <motion.span
                 animate={
                   isStartInView
@@ -364,7 +364,7 @@ export default function DeveloperPage() {
                 }}
                 className="group relative cursor-pointer"
               >
-                <div className="relative bg-gray-900/40 backdrop-blur-sm border border-gray-700/30 rounded-2xl p-8 h-full transition-all duration-300 group-hover:border-gray-600/50 group-hover:bg-gray-900/60">
+                <div className="relative bg-gray-900/40 backdrop-blur-sm border border-gray-700/30 rounded-2xl p-4 sm:p-8 h-full transition-all duration-300 group-hover:border-gray-600/50 group-hover:bg-gray-900/60">
                   {/* Icon */}
                   <motion.div
                     className="w-16 h-16 rounded-xl flex items-center justify-center mb-6"
@@ -379,7 +379,7 @@ export default function DeveloperPage() {
                   </motion.div>
 
                   {/* Content */}
-                  <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-white/90 transition-colors">
+                  <h3 className="text-lg sm:text-xl font-semibold text-white mb-3 group-hover:text-white/90 transition-colors">
                     {card.title}
                   </h3>
                   <p className="text-white/60 text-sm leading-relaxed mb-6">{card.description}</p>
@@ -410,7 +410,7 @@ export default function DeveloperPage() {
       </section>
 
        {/* Code Showcase Section */}
-      <section className="py-20 relative overflow-hidden">
+      <section className="py-8 sm:py-20 relative overflow-hidden">
         {/* Background Effects */}
         <div className="absolute inset-0 z-0">
           <motion.div
@@ -469,7 +469,7 @@ export default function DeveloperPage() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="space-y-8">
+              className="space-y-4 sm:space-y-8">
 
               {/* Main Heading */}
               <motion.h2
@@ -477,7 +477,7 @@ export default function DeveloperPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
                 viewport={{ once: true }}
-                className="text-2xl lg:text-5xl font-bold text-white leading-tight"
+                className="text-3xl lg:text-5xl font-bold text-white leading-tight"
               >
                 <motion.span
                   animate={{
@@ -499,7 +499,7 @@ export default function DeveloperPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
                 viewport={{ once: true }}
-                className="text-white/80 text-lg leading-relaxed max-w-lg"
+                className="text-white/80 text-sm sm:text-lg leading-relaxed max-w-lg"
               >
                 BCX Infinity empowers developers with EVM compatibility, Cosmos interoperability, and lightning-fast performance. Whether you're building DeFi protocols, NFT platforms, or cross-chain dApps, our robust SDKs, APIs, and tooling make development seamless and scalable.
               </motion.p>
@@ -510,7 +510,7 @@ export default function DeveloperPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1 }}
                 viewport={{ once: true }}
-                className="space-y-4"
+                className="space-y-4 text-sm sm:text-lg"
               >
                 {[
                   "EVM & Cosmos SDK Support",
@@ -576,7 +576,7 @@ export default function DeveloperPage() {
                 </div>
 
                 {/* Code Content */}
-                <div className="p-6 font-mono text-sm leading-relaxed">
+                <div className="p-4 sm:p-6 font-mono text-sm leading-relaxed">
                   <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -673,150 +673,284 @@ export default function DeveloperPage() {
             </motion.div>
           </div>
 
-          {/* Helpful Links Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            viewport={{ once: true }}
-            className="mt-20"
-          >
-            <div className="flex items-center gap-3 mb-8">
-              <div className="w-2 h-2 rounded-full" style={{ backgroundColor: "#efb81c" }} />
-              <span className="text-white/70 font-medium">Helpful Links</span>
-            </div>
+         
+        </div>
+      </section>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {[
-                {
-                  title: "API Documentation",
-                  description: "Complete reference for all Buycex APIs",
-                  icon: "📚",
-                  href: "#",
-                },
-                {
-                  title: "Code Examples",
-                  description: "Ready-to-use code snippets and templates",
-                  icon: "💻",
-                  href: "#",
-                },
-                {
-                  title: "Developer Tutorials",
-                  description: "Step-by-step guides for common use cases",
-                  icon: "🎓",
-                  href: "#",
-                },
-              ].map((link, index) => (
-                <motion.a
-                  key={index}
-                  href={link.href}
-                  className="group relative p-6 bg-gray-900/40 backdrop-blur-sm border border-gray-700/30 rounded-xl transition-all duration-300 hover:border-gray-600/50 hover:bg-gray-900/60"
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.8 + index * 0.1 }}
-                  viewport={{ once: true }}
-                  whileHover={{ scale: 1.02, y: -5 }}
+       {/* Ready to Build and Earn Section */}
+      <section className="py-8 sm:py-20 relative overflow-hidden">
+        {/* Background Effects */}
+        <div className="absolute inset-0 z-0">
+          <motion.div
+            className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-3xl"
+            style={{ backgroundColor: "#efb81c15" }}
+            animate={{
+              scale: [1, 1.2, 1],
+              opacity: [0.1, 0.3, 0.1],
+            }}
+            transition={{ duration: 8, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
+          />
+          <motion.div
+            className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full blur-3xl"
+            style={{ backgroundColor: "#efb81c20" }}
+            animate={{
+              scale: [1.2, 1, 1.2],
+              opacity: [0.2, 0.4, 0.2],
+            }}
+            transition={{ duration: 6, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
+          />
+        </div>
+
+        {/* Decorative Circle */}
+        <motion.div
+          className="absolute top-8 right-8 w-32 h-32 rounded-full opacity-60"
+          style={{ backgroundColor: "#efb81c" }}
+          animate={{
+            scale: [1, 1.1, 1],
+            opacity: [0.4, 0.6, 0.4],
+          }}
+          transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
+        />
+
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-stretch">
+            {/* Left Content */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="flex flex-col h-full"
+            >
+              {/* Main Heading */}
+              <motion.h2
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="text-3xl lg:text-6xl font-bold text-white leading-tight mb-8"
+              >
+                <motion.span
+                  animate={{
+                    textShadow: [
+                      "0 0 20px rgba(255, 255, 255, 0.3)",
+                      `0 0 30px #efb81c50`,
+                      "0 0 20px rgba(255, 255, 255, 0.3)",
+                    ],
+                  }}
+                  transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 1 }}
                 >
-                  <div className="flex items-start gap-4">
-                    <div className="text-2xl">{link.icon}</div>
-                    <div className="flex-1">
-                      <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-white/90 transition-colors">
-                        {link.title}
-                      </h3>
-                      <p className="text-white/60 text-sm">{link.description}</p>
-                    </div>
+                  Ready to Build and <span style={{ color: "#efb81c" }}>Earn?</span>
+                </motion.span>
+              </motion.h2>
+
+              {/* Build Relationships Card - Now takes remaining height */}
+              <motion.div
+                initial={{ opacity: 0, y: 50, scale: 0.9 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ duration: 0.8, delay: 0.6, type: "spring", stiffness: 100 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.02, y: -5 }}
+                className="relative group flex-1"
+              >
+                <div
+                  className="relative h-full p-4 sm:p-8 rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 flex flex-col justify-between"
+                  style={{
+                    background: `linear-gradient(135deg, #efb81c, #d4a017)`,
+                  }}
+                >
+                  <div>
+                    {/* Speech Bubble Icon */}
                     <motion.div
-                      className="opacity-0 group-hover:opacity-100 transition-opacity"
-                      style={{ color: "#efb81c" }}
-                      whileHover={{ x: 5 }}
+                      className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6"
+                      whileHover={{ scale: 1.1, rotate: 5 }}
+                      transition={{ duration: 0.2 }}
                     >
-                      <ArrowRight className="w-5 h-5" />
+                      <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4l4 4 4-4h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+                      </svg>
                     </motion.div>
+
+                    {/* Content */}
+                    <h3 className="text-lg sm:text-2xl font-bold text-black mb-4">Build Relationships</h3>
+                    <p className="text-black/80 text-sm sm:text-lg leading-relaxed mb-8">
+                      Want to partner up or build a dapp? Get in touch with our core contributors and ecosystem
+                      partners.
+                    </p>
                   </div>
+
+                  {/* Button - Positioned at bottom */}
+                  <motion.button
+                    className="bg-black/10 backdrop-blur-sm text-black font-semibold px-6 py-3 rounded-xl transition-all duration-300 border border-black/20 self-start"
+                    whileHover={{
+                      scale: 1.05,
+                      backgroundColor: "rgba(0, 0, 0, 0.2)",
+                      borderColor: "rgba(0, 0, 0, 0.3)",
+                    }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    Get in Touch
+                  </motion.button>
+
+                  {/* Decorative Elements */}
+                  <motion.div
+                    className="absolute -top-4 -right-4 w-24 h-24 bg-white/10 rounded-full blur-xl"
+                    animate={{
+                      scale: [1, 1.2, 1],
+                      opacity: [0.3, 0.5, 0.3],
+                    }}
+                    transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
+                  />
+                  <motion.div
+                    className="absolute -bottom-6 -left-6 w-20 h-20 bg-white/10 rounded-full blur-xl"
+                    animate={{
+                      scale: [1.2, 1, 1.2],
+                      opacity: [0.2, 0.4, 0.2],
+                    }}
+                    transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
+                  />
+                </div>
+              </motion.div>
+            </motion.div>
+
+            {/* Right Content - Cards */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="flex flex-col h-full space-y-6"
+            >
+              {/* Build dApps Card */}
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.02, y: -5 }}
+                className="group relative flex-1"
+              >
+                <div className="relative h-full bg-gray-900/60 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-4 sm:p-8 transition-all duration-300 group-hover:border-gray-600/70 group-hover:bg-gray-900/80 flex flex-col justify-between">
+                  <div>
+                    {/* Icon */}
+                    <motion.div
+                      className="w-12 h-12 rounded-xl flex items-center justify-center mb-6"
+                      style={{ backgroundColor: "#efb81c20" }}
+                      whileHover={{ scale: 1.1, backgroundColor: "#efb81c30" }}
+                    >
+                      <BookOpen className="w-6 h-6" style={{ color: "#efb81c" }} />
+                    </motion.div>
+
+                    {/* Content */}
+                    <h3 className="text-lg sm:text-2xl font-bold text-white mb-4">Build dApps</h3>
+                    <p className="text-white/70 text-sm sm:text-lg leading-relaxed mb-6">
+                      Find everything you need to start building on GateChain today.
+                    </p>
+                  </div>
+
+                  {/* Link - Positioned at bottom */}
+                  <motion.a
+                    href="#"
+                    className="inline-flex items-center gap-2 font-medium transition-colors self-start"
+                    style={{ color: "#efb81c" }}
+                    whileHover={{ x: 5 }}
+                  >
+                    View Documentation
+                    <ArrowRight className="w-4 h-4" />
+                  </motion.a>
 
                   {/* Hover Glow */}
                   <motion.div
-                    className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                    className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
                     style={{
                       background: `linear-gradient(135deg, transparent, #efb81c05, transparent)`,
                       border: `1px solid #efb81c20`,
                     }}
                   />
-                </motion.a>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
+                </div>
+              </motion.div>
 
-      {/* Developer Resources Section */}
-      <section ref={resourcesRef} className="py-20 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          {/* Section Heading */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={isResourcesInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">Developer Tools & Resources</h2>
-            <p className="text-white/70 text-lg max-w-2xl mx-auto">
-              Everything you need to build, deploy, and scale your applications on BuyCex
-            </p>
-          </motion.div>
-
-          {/* Resource Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {resourceCards.map((card, index) => (
+              {/* Build Bonds Card */}
               <motion.div
-                key={index}
                 initial={{ opacity: 0, y: 50 }}
-                animate={isResourcesInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-                transition={{ duration: 0.8, delay: 0.4 + index * 0.1 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.8 }}
+                viewport={{ once: true }}
                 whileHover={{ scale: 1.02, y: -5 }}
-                className="group relative"
+                className="group relative flex-1"
               >
-                <div className="relative bg-gray-900/40 backdrop-blur-sm border border-gray-700/30 rounded-2xl p-8 h-full transition-all duration-300 group-hover:border-gray-600/50">
-                  {/* Icon */}
-                  <motion.div
-                    className="w-14 h-14 rounded-xl flex items-center justify-center mb-6"
-                    style={{ backgroundColor: "#efb81c20" }}
-                    whileHover={{ scale: 1.1, backgroundColor: "#efb81c30" }}
-                  >
-                    <card.icon className="w-7 h-7" style={{ color: "#efb81c" }} />
-                  </motion.div>
+                <div className="relative h-full bg-gray-900/60 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-4 sm:p-8 transition-all duration-300 group-hover:border-gray-600/70 group-hover:bg-gray-900/80 flex flex-col justify-between">
+                  <div>
+                    {/* Icon */}
+                    <motion.div
+                      className="w-12 h-12 rounded-xl flex items-center justify-center mb-6"
+                      style={{ backgroundColor: "#efb81c20" }}
+                      whileHover={{ scale: 1.1, backgroundColor: "#efb81c30" }}
+                    >
+                      <Users className="w-6 h-6" style={{ color: "#efb81c" }} />
+                    </motion.div>
 
-                  {/* Content */}
-                  <h3 className="text-2xl font-semibold text-white mb-3">{card.title}</h3>
-                  <p className="text-white/70 mb-6">{card.description}</p>
+                    {/* Content */}
+                    <h3 className="text-lg sm:text-2xl font-bold text-white mb-4">Build Bonds</h3>
+                    <p className="text-white/70 text-sm sm:text-lg leading-relaxed mb-6">
+                      Connect with people from across the ecosystem. Build and grow together.
+                    </p>
+                  </div>
 
-                  {/* Features */}
-                  <ul className="space-y-2 mb-8">
-                    {card.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center gap-3 text-white/60 text-sm">
-                        <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: "#efb81c" }} />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-
-                  {/* Action Button */}
-                  <motion.button
-                    className="flex items-center gap-2 font-medium transition-colors"
+                  {/* Link - Positioned at bottom */}
+                  <motion.a
+                    href="#"
+                    className="inline-flex items-center gap-2 font-medium transition-colors self-start"
                     style={{ color: "#efb81c" }}
                     whileHover={{ x: 5 }}
                   >
-                    {card.action}
+                    Access the Community Hub
                     <ArrowRight className="w-4 h-4" />
-                  </motion.button>
+                  </motion.a>
+
+                  {/* Hover Glow */}
+                  <motion.div
+                    className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                    style={{
+                      background: `linear-gradient(135deg, transparent, #efb81c05, transparent)`,
+                      border: `1px solid #efb81c20`,
+                    }}
+                  />
                 </div>
               </motion.div>
-            ))}
+            </motion.div>
           </div>
+        </div>
+
+        {/* Floating Particles */}
+        <div className="absolute inset-0 z-0">
+          {mounted &&
+            Array.from({ length: 12 }).map((_, i) => (
+              <motion.div
+                key={i}
+                className="absolute w-1 h-1 rounded-full opacity-40"
+                style={{
+                  backgroundColor: "#efb81c",
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.random() * 100}%`,
+                }}
+                animate={{
+                  y: [0, -20, 0],
+                  opacity: [0.2, 0.6, 0.2],
+                  scale: [0.5, 1, 0.5],
+                }}
+                transition={{
+                  duration: 4 + Math.random() * 2,
+                  repeat: Number.POSITIVE_INFINITY,
+                  delay: Math.random() * 2,
+                  ease: "easeInOut",
+                }}
+              />
+            ))}
         </div>
       </section>
       {/* Call to Action Section */}
-      <section className="py-20 relative overflow-hidden">
+      <section className="py-8 sm:py-20 relative overflow-hidden">
         {/* Background Effects */}
         <div className="absolute inset-0 z-0">
           <motion.div
@@ -879,7 +1013,7 @@ export default function DeveloperPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-8"
+            className="text-3xl lg:text-7xl font-bold text-white leading-tight mb-8"
           >
             <motion.span
               animate={{
@@ -891,7 +1025,7 @@ export default function DeveloperPage() {
               }}
               transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
             >
-              The only thing you'll regret is that you didn't try.
+              The real regret? Never giving it a shot
             </motion.span>
           </motion.h2>
 
@@ -901,7 +1035,7 @@ export default function DeveloperPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
-            className="text-white/80 text-xl lg:text-2xl mb-16 leading-relaxed"
+            className="text-white/80 text-md lg:text-2xl mb-8 sm:mb-16 leading-relaxed"
           >
             Join us in building the financial system for tomorrow.
           </motion.p>
@@ -912,7 +1046,7 @@ export default function DeveloperPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             viewport={{ once: true }}
-            className="flex flex-wrap justify-center gap-4"
+            className="flex flex-wrap justify-center gap-2 sm:gap-4"
           >
             {[
               { name: "Discord", icon: "💬", href: "#" },
@@ -925,7 +1059,7 @@ export default function DeveloperPage() {
               <motion.a
                 key={social.name}
                 href={social.href}
-                className="flex items-center gap-3 px-6 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white hover:text-white transition-all duration-300 font-medium"
+                className="flex items-center gap-3 px-4 sm:px-6 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white hover:text-white transition-all duration-300 font-medium"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
@@ -954,7 +1088,7 @@ export default function DeveloperPage() {
           >
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <button
-                className="text-black inline-flex items-center rounded-md font-bold px-12 py-6 text-xl transition-all duration-300 shadow-2xl"
+                className="text-black inline-flex items-center rounded-md font-semibold px-4 sm:px-12 py-3 text-md sm:text-lg transition-all duration-300 shadow-2xl"
                 style={{
                   backgroundColor: "#efb81c",
                   borderColor: "#efb81c",
@@ -983,279 +1117,6 @@ export default function DeveloperPage() {
           transition={{ duration: 2, delay: 1.5, ease: "easeInOut" }}
           viewport={{ once: true }}
         />
-      </section>
-      {/* Ready to Build and Earn Section */}
-       {/* Ready to Build and Earn Section */}
-      <section className="py-20 relative overflow-hidden">
-        {/* Background Effects */}
-        <div className="absolute inset-0 z-0">
-          <motion.div
-            className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-3xl"
-            style={{ backgroundColor: "#efb81c15" }}
-            animate={{
-              scale: [1, 1.2, 1],
-              opacity: [0.1, 0.3, 0.1],
-            }}
-            transition={{ duration: 8, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-          />
-          <motion.div
-            className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full blur-3xl"
-            style={{ backgroundColor: "#efb81c20" }}
-            animate={{
-              scale: [1.2, 1, 1.2],
-              opacity: [0.2, 0.4, 0.2],
-            }}
-            transition={{ duration: 6, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-          />
-        </div>
-
-        {/* Decorative Circle */}
-        <motion.div
-          className="absolute top-8 right-8 w-32 h-32 rounded-full opacity-60"
-          style={{ backgroundColor: "#efb81c" }}
-          animate={{
-            scale: [1, 1.1, 1],
-            opacity: [0.4, 0.6, 0.4],
-          }}
-          transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-        />
-
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-stretch">
-            {/* Left Content */}
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="flex flex-col h-full"
-            >
-              {/* Main Heading */}
-              <motion.h2
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="text-5xl lg:text-6xl font-bold text-white leading-tight mb-8"
-              >
-                <motion.span
-                  animate={{
-                    textShadow: [
-                      "0 0 20px rgba(255, 255, 255, 0.3)",
-                      `0 0 30px #efb81c50`,
-                      "0 0 20px rgba(255, 255, 255, 0.3)",
-                    ],
-                  }}
-                  transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 1 }}
-                >
-                  Ready to Build and <span style={{ color: "#efb81c" }}>Earn?</span>
-                </motion.span>
-              </motion.h2>
-
-              {/* Build Relationships Card - Now takes remaining height */}
-              <motion.div
-                initial={{ opacity: 0, y: 50, scale: 0.9 }}
-                whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                transition={{ duration: 0.8, delay: 0.6, type: "spring", stiffness: 100 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.02, y: -5 }}
-                className="relative group flex-1"
-              >
-                <div
-                  className="relative h-full p-8 rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 flex flex-col justify-between"
-                  style={{
-                    background: `linear-gradient(135deg, #efb81c, #d4a017)`,
-                  }}
-                >
-                  <div>
-                    {/* Speech Bubble Icon */}
-                    <motion.div
-                      className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6"
-                      whileHover={{ scale: 1.1, rotate: 5 }}
-                      transition={{ duration: 0.2 }}
-                    >
-                      <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4l4 4 4-4h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
-                      </svg>
-                    </motion.div>
-
-                    {/* Content */}
-                    <h3 className="text-2xl font-bold text-black mb-4">Build Relationships</h3>
-                    <p className="text-black/80 text-lg leading-relaxed mb-8">
-                      Want to partner up or build a dapp? Get in touch with our core contributors and ecosystem
-                      partners.
-                    </p>
-                  </div>
-
-                  {/* Button - Positioned at bottom */}
-                  <motion.button
-                    className="bg-black/10 backdrop-blur-sm text-black font-semibold px-6 py-3 rounded-xl transition-all duration-300 border border-black/20 self-start"
-                    whileHover={{
-                      scale: 1.05,
-                      backgroundColor: "rgba(0, 0, 0, 0.2)",
-                      borderColor: "rgba(0, 0, 0, 0.3)",
-                    }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    Get in Touch
-                  </motion.button>
-
-                  {/* Decorative Elements */}
-                  <motion.div
-                    className="absolute -top-4 -right-4 w-24 h-24 bg-white/10 rounded-full blur-xl"
-                    animate={{
-                      scale: [1, 1.2, 1],
-                      opacity: [0.3, 0.5, 0.3],
-                    }}
-                    transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-                  />
-                  <motion.div
-                    className="absolute -bottom-6 -left-6 w-20 h-20 bg-white/10 rounded-full blur-xl"
-                    animate={{
-                      scale: [1.2, 1, 1.2],
-                      opacity: [0.2, 0.4, 0.2],
-                    }}
-                    transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-                  />
-                </div>
-              </motion.div>
-            </motion.div>
-
-            {/* Right Content - Cards */}
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              viewport={{ once: true }}
-              className="flex flex-col h-full space-y-6"
-            >
-              {/* Build dApps Card */}
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.6 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.02, y: -5 }}
-                className="group relative flex-1"
-              >
-                <div className="relative h-full bg-gray-900/60 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 transition-all duration-300 group-hover:border-gray-600/70 group-hover:bg-gray-900/80 flex flex-col justify-between">
-                  <div>
-                    {/* Icon */}
-                    <motion.div
-                      className="w-12 h-12 rounded-xl flex items-center justify-center mb-6"
-                      style={{ backgroundColor: "#efb81c20" }}
-                      whileHover={{ scale: 1.1, backgroundColor: "#efb81c30" }}
-                    >
-                      <BookOpen className="w-6 h-6" style={{ color: "#efb81c" }} />
-                    </motion.div>
-
-                    {/* Content */}
-                    <h3 className="text-2xl font-bold text-white mb-4">Build dApps</h3>
-                    <p className="text-white/70 text-lg leading-relaxed mb-6">
-                      Find everything you need to start building on GateChain today.
-                    </p>
-                  </div>
-
-                  {/* Link - Positioned at bottom */}
-                  <motion.a
-                    href="#"
-                    className="inline-flex items-center gap-2 font-medium transition-colors self-start"
-                    style={{ color: "#efb81c" }}
-                    whileHover={{ x: 5 }}
-                  >
-                    View Documentation
-                    <ArrowRight className="w-4 h-4" />
-                  </motion.a>
-
-                  {/* Hover Glow */}
-                  <motion.div
-                    className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
-                    style={{
-                      background: `linear-gradient(135deg, transparent, #efb81c05, transparent)`,
-                      border: `1px solid #efb81c20`,
-                    }}
-                  />
-                </div>
-              </motion.div>
-
-              {/* Build Bonds Card */}
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.8 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.02, y: -5 }}
-                className="group relative flex-1"
-              >
-                <div className="relative h-full bg-gray-900/60 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 transition-all duration-300 group-hover:border-gray-600/70 group-hover:bg-gray-900/80 flex flex-col justify-between">
-                  <div>
-                    {/* Icon */}
-                    <motion.div
-                      className="w-12 h-12 rounded-xl flex items-center justify-center mb-6"
-                      style={{ backgroundColor: "#efb81c20" }}
-                      whileHover={{ scale: 1.1, backgroundColor: "#efb81c30" }}
-                    >
-                      <Users className="w-6 h-6" style={{ color: "#efb81c" }} />
-                    </motion.div>
-
-                    {/* Content */}
-                    <h3 className="text-2xl font-bold text-white mb-4">Build Bonds</h3>
-                    <p className="text-white/70 text-lg leading-relaxed mb-6">
-                      Connect with people from across the ecosystem. Build and grow together.
-                    </p>
-                  </div>
-
-                  {/* Link - Positioned at bottom */}
-                  <motion.a
-                    href="#"
-                    className="inline-flex items-center gap-2 font-medium transition-colors self-start"
-                    style={{ color: "#efb81c" }}
-                    whileHover={{ x: 5 }}
-                  >
-                    Access the Community Hub
-                    <ArrowRight className="w-4 h-4" />
-                  </motion.a>
-
-                  {/* Hover Glow */}
-                  <motion.div
-                    className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
-                    style={{
-                      background: `linear-gradient(135deg, transparent, #efb81c05, transparent)`,
-                      border: `1px solid #efb81c20`,
-                    }}
-                  />
-                </div>
-              </motion.div>
-            </motion.div>
-          </div>
-        </div>
-
-        {/* Floating Particles */}
-        <div className="absolute inset-0 z-0">
-          {mounted &&
-            Array.from({ length: 12 }).map((_, i) => (
-              <motion.div
-                key={i}
-                className="absolute w-1 h-1 rounded-full opacity-40"
-                style={{
-                  backgroundColor: "#efb81c",
-                  left: `${Math.random() * 100}%`,
-                  top: `${Math.random() * 100}%`,
-                }}
-                animate={{
-                  y: [0, -20, 0],
-                  opacity: [0.2, 0.6, 0.2],
-                  scale: [0.5, 1, 0.5],
-                }}
-                transition={{
-                  duration: 4 + Math.random() * 2,
-                  repeat: Number.POSITIVE_INFINITY,
-                  delay: Math.random() * 2,
-                  ease: "easeInOut",
-                }}
-              />
-            ))}
-        </div>
       </section>
     </div>
   )
