@@ -24,7 +24,12 @@ export default function Navbar() {
                     description: "Dev guides and API docs",
                 },
                 {
-                    name: "Blockchain Explorer",
+                    name: "EVM Explorer",
+                    href: "#",
+                    description: "View blocks and TXs",
+                },
+                {
+                    name: "Cosmos Explorer",
                     href: "#",
                     description: "View blocks and TXs",
                 },
@@ -74,6 +79,11 @@ export default function Navbar() {
                     name: "Blog",
                     href: "https://buycex.com/blog",
                     description: "Check blog details",
+                },
+                {
+                    name: "Roadmap",
+                    href: "/roadmap",
+                    description: "Road to success",
                 },
                 {
                     name: "Careers",

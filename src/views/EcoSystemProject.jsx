@@ -4,6 +4,7 @@ import { motion, useInView } from "framer-motion"
 import { useRef, useState, useEffect } from "react"
 import { Plus, Search, ExternalLink, Star, Users, TrendingUp, Zap, Coins } from "lucide-react"
 import Navbar from "../components/global/Navbar"
+import { Link } from "react-router-dom/cjs/react-router-dom"
 
 export default function EcoSystemProject() {
   const heroRef = useRef(null)
@@ -213,7 +214,7 @@ export default function EcoSystemProject() {
                 transition={{ duration: 0.6, delay: 0.8 }}
               >
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <a href="/dapp/submit-form">
+                  <Link to="/dapp/submit-form">
                   <button
                     size="lg"
                     className="text-black flex items-center rounded-md font-semibold px-6 py-3 text-lg transition-all duration-300 shadow-lg"
@@ -233,7 +234,7 @@ export default function EcoSystemProject() {
                     <Plus className="mr-2 w-5 h-5" />
                     Add dApp
                   </button>
-                  </a>
+                  </Link>
                 </motion.div>
               </motion.div>
             </motion.div>
@@ -415,19 +416,6 @@ export default function EcoSystemProject() {
                     {dapp.category}
                   </div>
 
-                  {/* Stats */}
-                  <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
-                    <div className="flex items-center gap-1">
-                      <Users className="w-4 h-4" />
-                      <span>{dapp.users}</span>
-                    </div>
-                    {dapp.tvl !== "N/A" && (
-                      <div className="flex items-center gap-1">
-                        <TrendingUp className="w-4 h-4" />
-                        <span>{dapp.tvl}</span>
-                      </div>
-                    )}
-                  </div>
 
                   {/* Launch Button */}
                   <motion.button

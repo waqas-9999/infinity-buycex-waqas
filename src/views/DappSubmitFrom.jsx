@@ -199,7 +199,7 @@ export default function SubmitAppPage() {
             className="mb-8"
           >
             <Link
-              href="/apps"
+              to="/eco-system-project"
               className="inline-flex items-center gap-2 text-white/70 hover:text-white transition-colors"
             >
               <ArrowLeft className="w-4 h-4" />

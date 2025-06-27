@@ -5,6 +5,7 @@ import SubmitAppPage from '../views/DappSubmitFrom';
 import EcoSystemProject from '../views/EcoSystemProject';
 import Getstarted from '../views/Getstarted';
 import Home from '../views/Home';
+import RoadmapPage from '../views/RoadMap';
 
 
 
@@ -38,6 +39,11 @@ let routes = [
 	{
 		path: '/dapp/submit-form',
 		component: SubmitAppPage,
+		layout: 'main',
+	},
+	{
+		path: '/roadmap',
+		component: RoadmapPage,
 		layout: 'main',
 	}
 	
