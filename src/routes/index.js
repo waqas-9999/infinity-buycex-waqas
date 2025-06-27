@@ -1,6 +1,7 @@
 import DeveloperPage from '../components/GetStarted';
 import PrivacyPolicy from '../components/PrivacyPolicy/Index';
 import TermsofService from '../components/TermsConditions/Index';
+import SubmitAppPage from '../views/DappSubmitFrom';
 import EcoSystemProject from '../views/EcoSystemProject';
 import Getstarted from '../views/Getstarted';
 import Home from '../views/Home';
@@ -34,6 +35,11 @@ let routes = [
 		component: EcoSystemProject,
 		layout: 'main',
 	},
+	{
+		path: '/dapp/submit-form',
+		component: SubmitAppPage,
+		layout: 'main',
+	}
 	
 ];
 export default routes;
