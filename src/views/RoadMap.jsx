@@ -275,7 +275,7 @@ export default function RoadmapPage() {
             className="text-white/80 text-xl lg:text-2xl leading-relaxed mb-12 max-w-3xl mx-auto"
           >
             Discover our journey from inception to becoming the leading blockchain platform for decentralized finance
-            and AI innovation.
+            and Limitless Possibilities.
           </motion.p>
 
           {/* CTA Button */}
@@ -284,29 +284,6 @@ export default function RoadmapPage() {
             animate={isHeroInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <button
-                size="lg"
-                className="text-black font-semibold px-8 py-4 rounded-md text-lg transition-all duration-300 shadow-lg"
-                style={{
-                  backgroundColor: "#efb81c",
-                  borderColor: "#efb81c",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = "#d4a017"
-                  e.currentTarget.style.boxShadow = `0 10px 25px #efb81c40`
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = "#efb81c"
-                  e.currentTarget.style.boxShadow = "0 4px 6px -1px rgba(0, 0, 0, 0.1)"
-                }}
-              >
-                <div className="flex items-center">
-                    Join Our Journey
-                <ArrowRight className="ml-2 w-5 h-5" />
-                </div>
-              </button>
-            </motion.div>
           </motion.div>
         </div>
       </section>

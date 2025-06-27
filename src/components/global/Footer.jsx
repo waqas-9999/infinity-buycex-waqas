@@ -25,12 +25,12 @@ export default function Footer() {
       { name: "Documentation", href: "#", icon: BookOpen },
       { name: "API Reference", href: "#", icon: Code },
       { name: "SDK & Tools", href: "#", icon: Zap },
-      { name: "GitHub", href: "#", icon: Github },
+      { name: "GitHub", href: "https://github.com/cosvmlabs/buycex-chain", icon: Github },
     ],
     community: [
       { name: "Discord", href: "#", icon: MessageCircle },
       { name: "Twitter", href: "#", icon: Twitter },
-      { name: "Telegram", href: "#", icon: Users },
+      { name: "Telegram", href: "https://t.me/bcxinfinity", icon: Users },
       { name: "Reddit", href: "#", icon: ExternalLink },
     ],
     resources: [
@@ -46,7 +46,7 @@ export default function Footer() {
   }
 
   const socialLinks = [
-    { icon: Twitter, href: "#", label: "Twitter" },
+    { icon: Twitter, href: "https://x.com/bcxinfinity?s=21", label: "Twitter" },
     { icon: Github, href: "#", label: "GitHub" },
     { icon: MessageCircle, href: "#", label: "Discord" },
     { icon: Mail, href: "#", label: "Email" },
