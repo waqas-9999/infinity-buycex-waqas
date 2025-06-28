@@ -140,7 +140,7 @@ export default function EcoSystemProject() {
       <Navbar />
 
       {/* Hero Section */}
-      <section ref={heroRef} className="relative overflow-hidden py-20">
+      <section ref={heroRef} className="relative overflow-hidden py-10 lg:py-20">
         {/* Background Effects */}
         <div className="absolute inset-0 z-0">
           <motion.div
@@ -170,14 +170,14 @@ export default function EcoSystemProject() {
               initial={{ opacity: 0, x: -50 }}
               animate={isHeroInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="space-y-8"
+              className="space-y-4 lg:space-y-8"
             >
               {/* Main Heading */}
               <motion.h1
                 initial={{ opacity: 0, y: 30 }}
                 animate={isHeroInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="text-6xl lg:text-7xl font-bold text-white leading-tight"
+                className="text-3xl lg:text-7xl font-bold text-white leading-tight"
               >
                 <motion.span
                   animate={
@@ -202,7 +202,7 @@ export default function EcoSystemProject() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isHeroInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
-                className="text-white/80 text-xl lg:text-2xl leading-relaxed max-w-lg"
+                className="text-white/80 text-lg lg:text-2xl leading-relaxed max-w-lg"
               >
                 An overview of the dApps in the BCX Infinity ecosystem.
               </motion.p>
@@ -213,11 +213,11 @@ export default function EcoSystemProject() {
                 animate={isHeroInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
               >
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <motion.div className="flex justify-self-start self-start" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <Link to="/dapp/submit-form">
                   <button
                     size="lg"
-                    className="text-black flex items-center rounded-md font-semibold px-6 py-3 text-lg transition-all duration-300 shadow-lg"
+                    className="text-black flex items-center self-start justify-self-start cursor-pointer rounded-md font-semibold px-4 sm:px-6 py-3 text-sm lg:text-lg transition-all duration-300 shadow-lg"
                     style={{
                       backgroundColor: "#efb81c",
                       borderColor: "#efb81c",
@@ -305,7 +305,7 @@ export default function EcoSystemProject() {
       </section>
 
       {/* Apps Section */}
-      <section ref={appsRef} className="py-20 bg-black relative overflow-hidden">
+      <section ref={appsRef} className="py-10 lg:py-20 bg-black relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           {/* Search and Filter Bar */}
           <motion.div
@@ -321,7 +321,7 @@ export default function EcoSystemProject() {
                   <motion.button
                     key={category}
                     onClick={() => setSelectedCategory(category)}
-                    className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
+                    className={`px-3 sm:px-6 py-1 sm:py-3 rounded-full text-sm lg:text-md font-medium transition-all duration-300 ${
                       selectedCategory === category
                         ? "text-black shadow-lg"
                         : "bg-black text-gray-100 hover:bg-[#151415] border border-[#454545]"
@@ -353,7 +353,7 @@ export default function EcoSystemProject() {
                   placeholder="Search dApps..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="pl-12 pr-4 py-3 w-80 bg-black border border-[#454545] rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-all duration-300"
+                  className="pl-12 pr-4 py-1 sm:py-3 w-80 bg-black border border-[#454545] rounded-md sn:rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-all duration-300"
                 />
               </motion.div>
             </div>
@@ -364,7 +364,7 @@ export default function EcoSystemProject() {
             initial={{ opacity: 0, y: 50 }}
             animate={isAppsInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-8"
           >
             {filteredDApps.map((dapp, index) => (
               <motion.div
@@ -384,7 +384,7 @@ export default function EcoSystemProject() {
                 }}
                 className="group relative cursor-pointer"
               >
-                <div className="relative bg-black rounded-2xl p-6 shadow-lg border border-[#454545] transition-all duration-300 group-hover:shadow-2xl group-hover:border-[#454545]">
+                <div className="relative bg-black rounded-2xl p-4 lg:p-6 shadow-lg border border-[#454545] transition-all duration-300 group-hover:shadow-2xl group-hover:border-[#454545]">
                   {/* Featured Badge */}
                   {dapp.featured && (
                     <div
@@ -419,7 +419,7 @@ export default function EcoSystemProject() {
 
                   {/* Launch Button */}
                   <motion.button
-                    className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-medium transition-all duration-300 border-2 border-[#454545]"
+                    className="w-full flex items-center justify-center gap-2 py-1.5 sm:py-3 rounded-xl font-medium transition-all duration-300 border-2 border-[#454545]"
                     style={{
                       backgroundColor: "transparent",
                       borderColor: dapp.color,
@@ -455,7 +455,7 @@ export default function EcoSystemProject() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-center py-20"
+              className="text-center py-10 lg:py-20"
             >
               <div className="text-6xl mb-4">🔍</div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">No dApps found</h3>
@@ -490,14 +490,14 @@ export default function EcoSystemProject() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={isAppsInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
                 transition={{ duration: 0.6, delay: 1.7 + index * 0.1 }}
-                className="text-center p-8  rounded-2xl shadow-lg border border-[#454545]"
+                className="text-center p-4 sm:p-8  rounded-2xl shadow-lg border border-[#454545]"
               >
                 <motion.div
-                  className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4"
+                  className="w-10 sm:w-16 h-10 sm:h-16 rounded-md sm:rounded-2xl flex items-center justify-center mx-auto mb-4"
                   style={{ backgroundColor: `${stat.color}20` }}
                   whileHover={{ scale: 1.1, rotate: 5 }}
                 >
-                  <stat.icon className="w-8 h-8" style={{ color: stat.color }} />
+                  <stat.icon className="w-6 sm:w-8 h-6 sm:h-8" style={{ color: stat.color }} />
                 </motion.div>
                 <div className="text-3xl font-bold text-white mb-2">{stat.value}</div>
                 <div className="text-gray-600">{stat.label}</div>

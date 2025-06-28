@@ -142,8 +142,9 @@ export default function SubmitAppPage() {
               within 3-5 business days.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/apps">
-                <button size="lg" className="text-black font-semibold px-8 py-4" style={{ backgroundColor: "#efb81c" }}>
+              <Link
+              to="/eco-system-project">
+                <button size="lg" className="text-black font-semibold px-8 py-2 sm:py-4" style={{ backgroundColor: "#efb81c" }}>
                   Browse dApps
                 </button>
               </Link>
@@ -212,7 +213,7 @@ export default function SubmitAppPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={isHeroInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
+            className="text-3xl lg:text-6xl font-bold text-white leading-tight mb-6"
           >
             <motion.span
               animate={
@@ -237,7 +238,7 @@ export default function SubmitAppPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={isHeroInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-white/80 text-xl leading-relaxed mb-8 max-w-2xl mx-auto"
+            className="text-white/80 text-sm lg:text-[16px] leading-relaxed mb-8 max-w-2xl mx-auto"
           >
             Join the BuyCex ecosystem and showcase your dApp to thousands of users. Get listed in our official dApp
             directory.
@@ -278,13 +279,13 @@ export default function SubmitAppPage() {
 
       {/* Form Section */}
       <section ref={formRef} className="py-20 bg-gray-50 relative overflow-hidden">
-        <div className="max-w-4xl mx-auto px-6 relative z-10">
+        <div className="max-w-4xl mx-auto px-0 sm:px-6 relative z-10">
           <motion.form
             initial={{ opacity: 0, y: 50 }}
             animate={isFormInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             onSubmit={handleSubmit}
-            className="bg-white rounded-2xl shadow-2xl p-8 lg:p-12"
+            className="bg-white rounded-2xl shadow-2xl p-4 sm:p-8 lg:p-12"
           >
             {/* Step 1: Basic Information */}
             {currentStep === 1 && (
@@ -296,7 +297,7 @@ export default function SubmitAppPage() {
                 className="space-y-8"
               >
                 <div className="text-center mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-2">Basic Information</h2>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Basic Information</h2>
                   <p className="text-gray-600">Tell us about your dApp</p>
                 </div>
 
@@ -431,7 +432,7 @@ export default function SubmitAppPage() {
                 className="space-y-8"
               >
                 <div className="text-center mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-2">Media & Social Links</h2>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Media & Social Links</h2>
                   <p className="text-gray-600">Upload your logo and provide social media links</p>
                 </div>
 
@@ -564,7 +565,7 @@ export default function SubmitAppPage() {
                 className="space-y-8"
               >
                 <div className="text-center mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-2">Contact & Final Details</h2>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Contact & Final Details</h2>
                   <p className="text-gray-600">How can we reach you?</p>
                 </div>
 
@@ -651,7 +652,7 @@ export default function SubmitAppPage() {
                   <button
                     type="button"
                     onClick={nextStep}
-                    className="px-8 py-3 text-black font-semibold"
+                    className="px-8 py-3 rounded-md text-black font-semibold"
                     style={{ backgroundColor: "#efb81c" }}
                   >
                     Next Step
@@ -660,7 +661,7 @@ export default function SubmitAppPage() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="px-8 py-3 text-black font-semibold flex items-center gap-2"
+                    className="px-8 py-3 text-black rounded-md font-semibold flex items-center gap-2"
                     style={{ backgroundColor: "#efb81c" }}
                   >
                     {isSubmitting ? (

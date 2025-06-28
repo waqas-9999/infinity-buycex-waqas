@@ -248,7 +248,7 @@ export default function RoadmapPage() {
             initial={{ opacity: 0, y: 50 }}
             animate={isHeroInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-6xl lg:text-8xl font-bold leading-tight mb-8"
+            className="text-4xl lg:text-8xl font-bold leading-tight mb-4 sm:mb-8"
           >
             <span className="text-white">BuyCex</span>
             <br />
@@ -272,7 +272,7 @@ export default function RoadmapPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={isHeroInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-white/80 text-xl lg:text-2xl leading-relaxed mb-12 max-w-3xl mx-auto"
+            className="text-white/80 text-md sm:text-xl lg:text-2xl leading-relaxed mb-12 max-w-3xl mx-auto"
           >
             Discover our journey from inception to becoming the leading blockchain platform for decentralized finance
             and Limitless Possibilities.

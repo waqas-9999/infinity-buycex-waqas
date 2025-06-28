@@ -3,11 +3,26 @@ import { motion } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
 import { ChevronDown, Infinity } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 export default function Navbar() {
     const [activeDropdown, setActiveDropdown] = useState(null);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const dropdownRefs = useRef({});
+    const location = useLocation();
+
+    useEffect(() => {
+        setIsMobileMenuOpen(false);
+        setActiveDropdown(null);
+    }, [location.pathname]);
+
+    useEffect(() => {
+        if (isMobileMenuOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+    }, [isMobileMenuOpen]);
 
     const navItems = [
         {
@@ -98,21 +113,27 @@ export default function Navbar() {
         setActiveDropdown((prev) => (prev === label ? null : label));
     };
 
-    // Detect clicks outside dropdowns
+    const mobileMenuRef = useRef();
+
     useEffect(() => {
         const handleClickOutside = (e) => {
-            const clickedInside = Object.values(dropdownRefs.current).some(
-                (ref) => ref?.contains(e.target)
+            const clickedInsideDropdowns = Object.values(
+                dropdownRefs.current
+            ).some((ref) => ref?.contains(e.target));
+            const clickedInsideMobileMenu = mobileMenuRef.current?.contains(
+                e.target
             );
-            if (!clickedInside) {
+
+            if (!clickedInsideDropdowns && !clickedInsideMobileMenu) {
                 setActiveDropdown(null);
                 setIsMobileMenuOpen(false);
             }
         };
 
         document.addEventListener("mousedown", handleClickOutside);
-        return () =>
+        return () => {
             document.removeEventListener("mousedown", handleClickOutside);
+        };
     }, []);
 
     return (
@@ -280,6 +301,7 @@ export default function Navbar() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
                     transition={{ duration: 0.3 }}
+                    ref={mobileMenuRef}
                     className="absolute top-full left-0 right-0 mt-2 mx-6 bg-gray-900/95 backdrop-blur-xl border border-gray-700/50 rounded-xl shadow-2xl md:hidden z-50"
                 >
                     <div className="py-4">
@@ -287,7 +309,7 @@ export default function Navbar() {
                             <div key={index} className="px-4 py-2">
                                 <button
                                     onClick={() => handleDropdown(item.label)}
-                                    className="flex items-center justify-between w-full text-white/90 hover:text-white transition-colors font-medium py-2"
+                                    className="flex items-center justify-between w-full text-white/90 hover:text-white transition-colors font-medium py-2 px-2 rounded-md"
                                 >
                                     <span>{item.label}</span>
                                     <motion.span
