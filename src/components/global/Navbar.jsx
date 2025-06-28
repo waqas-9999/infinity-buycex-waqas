@@ -40,7 +40,7 @@ export default function Navbar() {
                 },
                 {
                     name: "GitHub",
-                    href: "#",
+                    href: "https://github.com/cosvmlabs/buycex-chain",
                     description: "Source code & repos",
                 },
             ],

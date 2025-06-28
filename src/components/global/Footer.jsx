@@ -29,7 +29,7 @@ export default function Footer() {
     ],
     community: [
       { name: "Discord", href: "#", icon: MessageCircle },
-      { name: "Twitter", href: "#", icon: Twitter },
+      { name: "Twitter", href: "https://x.com/bcxinfinity?s=21", icon: Twitter },
       { name: "Telegram", href: "https://t.me/bcxinfinity", icon: Users },
       { name: "Reddit", href: "#", icon: ExternalLink },
     ],
@@ -47,7 +47,7 @@ export default function Footer() {
 
   const socialLinks = [
     { icon: Twitter, href: "https://x.com/bcxinfinity?s=21", label: "Twitter" },
-    { icon: Github, href: "#", label: "GitHub" },
+    { icon: Github, href: "https://github.com/cosvmlabs/buycex-chain", label: "GitHub" },
     { icon: MessageCircle, href: "#", label: "Discord" },
     { icon: Mail, href: "#", label: "Email" },
   ]
