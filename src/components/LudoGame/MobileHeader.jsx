@@ -1,6 +1,7 @@
 "use client"
 
 import { ArrowLeft } from "lucide-react"
+import { FaAngleRight } from "react-icons/fa6";
 
 export function MobileHeader({ onBack, title = "Deposit" }) {
   return (
@@ -8,11 +9,11 @@ export function MobileHeader({ onBack, title = "Deposit" }) {
       {/* Status Bar */}
 
       {/* Header */}
-      <div className="flex items-center px-4 py-4">
+      <div className="flex justify-between items-center px-4 py-4">
         <button onClick={onBack} className="bg-gray-700 hover:bg-gray-600 rounded-lg p-2 mr-4 transition-colors">
           <ArrowLeft className="w-5 h-5 text-white" />
         </button>
-        <h1 className="text-white font-bold text-xl flex-1 text-center mr-12">{title}</h1>
+        <a href="/transaction"><button className="flex items-center gap-1">Transaction <FaAngleRight/></button></a>
       </div>
     </div>
   )

@@ -16,7 +16,7 @@ export function DepositScreen({ onSwitchToWithdraw }) {
       {/* Tab Navigation */}
       <div className="px-4 mb-6">
         <div className="flex bg-gray-800 rounded-2xl overflow-hidden border border-gray-700/50">
-          <button className="flex-1 py-4 px-6 font-semibold transition-all duration-300 bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg shadow-orange-500/25">
+          <button className="flex-1 py-4 px-6 font-semibold transition-all duration-300 bg-[#f6921b] text-white shadow-lg shadow-orange-500/25">
             💰 Deposit
           </button>
           <button
@@ -43,7 +43,7 @@ export function DepositScreen({ onSwitchToWithdraw }) {
 
           {/* <BonusBanner /> */}
 
-          <QRSection />
+          {/* <QRSection /> */}
         </>
       )}
 

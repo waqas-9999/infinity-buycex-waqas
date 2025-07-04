@@ -2,7 +2,7 @@
 
 export function CurrencyTabs({ activeTab, onTabChange }) {
   return (
-    <div className="px-4 mb-6">
+    <div className="px-4">
       <div className="flex space-x-8">
         <button
           onClick={() => onTabChange("crypto")}

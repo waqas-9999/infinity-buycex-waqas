@@ -7,7 +7,7 @@ export function TabNavigation({ activeTab, onTabChange }) {
         onClick={() => onTabChange("deposit")}
         className={`flex-1 py-4 px-6 font-semibold transition-all duration-300 ${
           activeTab === "deposit"
-            ? "bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg shadow-orange-500/25"
+            ? "bg-[#f6921b] text-white shadow-lg shadow-orange-500/25"
             : "text-gray-400 hover:text-white hover:bg-gray-800"
         }`}
       >
@@ -17,7 +17,7 @@ export function TabNavigation({ activeTab, onTabChange }) {
         onClick={() => onTabChange("withdraw")}
         className={`flex-1 py-4 px-6 font-semibold transition-all duration-300 ${
           activeTab === "withdraw"
-            ? "bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg shadow-orange-500/25"
+            ? "bg-[#f6921b] text-white shadow-lg shadow-orange-500/25"
             : "text-gray-400 hover:text-white hover:bg-gray-800"
         }`}
       >

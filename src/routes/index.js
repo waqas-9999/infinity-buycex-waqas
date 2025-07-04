@@ -8,6 +8,7 @@ import Home from '../views/Home';
 import RoadmapPage from '../views/RoadMap';
 import WalletDashboard from '../views/Test';
 import WalletTransaction from '../components/LudoGame/WalletTransaction';
+import TransactionHistory from '../components/LudoGame/Transaction';
 
 let routes = [
 
@@ -56,6 +57,11 @@ let routes = [
 		component: WalletTransaction,
 		layout: 'main'
 	},
+	{
+		path:'/transaction',
+		component: TransactionHistory,
+		layout: 'main'
+	}
 	
 ];
 export default routes;
