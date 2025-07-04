@@ -6,8 +6,8 @@ import EcoSystemProject from '../views/EcoSystemProject';
 import Getstarted from '../views/Getstarted';
 import Home from '../views/Home';
 import RoadmapPage from '../views/RoadMap';
-
-
+import WalletDashboard from '../views/Test';
+import WalletTransaction from '../components/LudoGame/WalletTransaction';
 
 let routes = [
 
@@ -45,7 +45,17 @@ let routes = [
 		path: '/roadmap',
 		component: RoadmapPage,
 		layout: 'main',
-	}
+	},
+	{
+		path:'/test',
+		component: WalletDashboard,
+		layout: 'main'
+	},
+	{
+		path:'/deposit',
+		component: WalletTransaction,
+		layout: 'main'
+	},
 	
 ];
 export default routes;
