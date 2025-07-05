@@ -64,7 +64,11 @@ export function WithdrawScreen({ onSwitchToDeposit }) {
                     type="select"
                     value={chain}
                     onChange={setChain}
-                    options={["BSC", "ETH", "TRX"]}
+                    options={[
+                        { label: "BSC" },
+                        { label: "ETH" },
+                        { label: "TRX" },
+                    ]}
                     icon="⛓️"
                 />
 
@@ -76,7 +80,6 @@ export function WithdrawScreen({ onSwitchToDeposit }) {
                     icon="📍"
                     hasError={address.trim() === ""}
                 />
-                
 
                 <FormField
                     label="Amount"
@@ -146,11 +149,20 @@ export function WithdrawScreen({ onSwitchToDeposit }) {
                         </div>
                     </div>
                 </div>
-                
-                <div className="border-2 border-green-500 bg-green-500/10 flex items-center gap-3 rounded-lg p-3  ">
-                            <div className="w-10"><IoMdInformationCircleOutline className="text-green-500" size={20}/></div>
-                            <span className="text-xs">For security purposes, large or suspicious withdrawal may take 1-7 hours for audit process. We appreciate your patience!</span>
-                          </div>
+
+                <div className="border-2 mt-4 border-green-500 bg-green-500/10 flex items-center gap-3 rounded-lg p-3  ">
+                    <div className="w-10">
+                        <IoMdInformationCircleOutline
+                            className="text-green-500"
+                            size={20}
+                        />
+                    </div>
+                    <span className="text-xs">
+                        For security purposes, large or suspicious withdrawal
+                        may take 1-7 hours for audit process. We appreciate your
+                        patience!
+                    </span>
+                </div>
             </div>
 
             {/* <div className="space-y-4">

@@ -55,13 +55,15 @@ export function FormField({
                                     }}
                                     className="flex items-center gap-2 px-4 py-2 hover:bg-gray-700 cursor-pointer text-white"
                                 >
-                                    <img
-                                        src={option.icon}
-                                        alt={option.label}
-                                        width={24}
-                                        height={24}
-                                        className="rounded-full"
-                                    />
+                                    {option.icon && (
+                                        <img
+                                            src={option.icon}
+                                            alt={option.label}
+                                            width={24}
+                                            height={24}
+                                            className="rounded-full"
+                                        />
+                                    )}
                                     <span>{option.label}</span>
                                 </li>
                             ))}
