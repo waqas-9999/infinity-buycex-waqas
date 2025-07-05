@@ -74,7 +74,7 @@ export function FormField({
                     value={value}
                     onChange={(e) => onChange(e.target.value)}
                     placeholder={placeholder}
-                    className={`w-full bg-gray-800/50 backdrop-blur-sm rounded-xl px-4 py-4 text-white placeholder-gray-500 focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20 transition-all border ${
+                    className={`w-full bg-gray-800/50 backdrop-blur-sm rounded-xl px-4 py-4 text-white placeholder-gray-500 text-base focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20 transition-all border ${
                         hasError ? "border-gray-600/50" : "border-gray-600/50"
                     }`}
                 />
