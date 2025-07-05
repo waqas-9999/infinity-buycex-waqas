@@ -5,6 +5,7 @@ import { ChevronDown, Copy, HelpCircle } from "lucide-react"
 import { IoMdInformationCircleOutline } from "react-icons/io"
 import Usdt from "../../assets/img/usdt.png"
 import { QRCodeCanvas } from "qrcode.react"
+import { FormField } from "./FormField"
 
 export function DepositForm({ currency, network, onCurrencyChange, onNetworkChange }) {
   const [showCurrencyDropdown, setShowCurrencyDropdown] = useState(false)
@@ -117,18 +118,18 @@ export function DepositForm({ currency, network, onCurrencyChange, onNetworkChan
 
       {/* Deposit Input and Button */}
       <div className="flex-1 mt-4">
-        <h3 className="text-gray-300 text-sm font-medium mb-3">Deposit amount</h3>
-        <input
-          placeholder="0"
-          value={depositAmount}
-          onChange={(e) => setDepositAmount(e.target.value)}
-          className="text-white bg-gray-800 rounded-lg p-3 mb-4 font-mono w-full ring-0 focus:outline-none focus:ring-1 ring-[#f6921b] text-sm break-all leading-relaxed"
-        />
+       <FormField
+  label="Deposit Amount"
+  value={depositAmount}
+  onChange={setDepositAmount}
+  placeholder="Enter deposit amount"
+  icon="💵"
+/>
 
         <button
           disabled={!isButtonActive}
           onClick={handleGenerateClick}
-          className={`w-full font-medium py-3 px-4 rounded-lg transition-colors flex items-center justify-center space-x-2
+          className={`w-full font-medium py-3 mt-3 px-4 rounded-lg transition-colors flex items-center justify-center space-x-2
             ${isButtonActive ? "bg-[#f6921b]/80 hover:bg-[#f6921b] text-white" : "bg-gray-700 text-white"}
           `}
         >
