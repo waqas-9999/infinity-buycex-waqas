@@ -9,6 +9,7 @@ import RoadmapPage from '../views/RoadMap';
 import WalletDashboard from '../views/Test';
 import WalletTransaction from '../components/LudoGame/WalletTransaction';
 import TransactionHistory from '../components/LudoGame/Transaction';
+import profile from '../views/profile';
 
 let routes = [
 
@@ -60,6 +61,11 @@ let routes = [
 	{
 		path:'/transaction',
 		component: TransactionHistory,
+		layout: 'main'
+	},
+	{
+		path:'/profile',
+		component: profile,
 		layout: 'main'
 	}
 	

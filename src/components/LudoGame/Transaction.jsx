@@ -138,7 +138,7 @@ export default function TransactionHistory() {
             <div className="px-4 py-4">
                 <div className="border-2 border-[#f6921b] rounded-2xl p-2 bg-[#1f2937]">
                     <div className="flex items-center space-x-2">
-                        <div className="flex space-x-2 overflow-x-auto">
+                        <div className="flex space-x-2 overflow-x-auto no-scrollbar">
                             {filters.map((filter) => (
                                 <button
                                     key={filter}
@@ -146,7 +146,7 @@ export default function TransactionHistory() {
                                     className={`px-4 py-2 rounded-full font-medium whitespace-nowrap transition-all ${
                                         activeFilter === filter
                                             ? "bg-[#f6921b] text-white shadow-md"
-                                            : "bg-[#f6921b]/30 text-white/70 hover:bg-gray-100"
+                                            : " text-white/70 hover:bg-gray-100"
                                     }`}
                                 >
                                     {filter}
@@ -296,6 +296,19 @@ export default function TransactionHistory() {
             <div className="fixed bottom-4 left-1/2 -translate-x-1/2">
                 <div className="w-32 h-1 bg-gray-800 rounded-full"></div>
             </div>
+            <style>{`
+            /* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+            `}</style>
         </div>
     );
 }

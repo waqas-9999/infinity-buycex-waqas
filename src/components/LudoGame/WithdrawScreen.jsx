@@ -76,11 +76,7 @@ export function WithdrawScreen({ onSwitchToDeposit }) {
                     icon="📍"
                     hasError={address.trim() === ""}
                 />
-                {address.trim() === "" && (
-                    <p className="text-red-500 text-sm px-1">
-                        Please enter a valid withdrawal address.
-                    </p>
-                )}
+                
 
                 <FormField
                     label="Amount"
