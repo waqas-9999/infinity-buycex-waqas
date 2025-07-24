@@ -10,6 +10,7 @@ import WalletDashboard from '../views/Test';
 import WalletTransaction from '../components/LudoGame/WalletTransaction';
 import TransactionHistory from '../components/LudoGame/Transaction';
 import profile from '../views/profile';
+import { Leaderboard } from '../components/LudoGame/Leaderboard';
 
 let routes = [
 
@@ -66,6 +67,11 @@ let routes = [
 	{
 		path:'/profile',
 		component: profile,
+		layout: 'main'
+	},
+	{
+		path:'/leaderboard',
+		component: Leaderboard,
 		layout: 'main'
 	}
 	
