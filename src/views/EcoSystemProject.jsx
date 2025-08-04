@@ -5,6 +5,11 @@ import { useRef, useState, useEffect } from "react"
 import { Plus, Search, ExternalLink, Star, Users, TrendingUp, Zap, Coins } from "lucide-react"
 import Navbar from "../components/global/Navbar"
 import { Link } from "react-router-dom/cjs/react-router-dom"
+import Keplr from "../assets/img/keplr.jpeg"
+import Metamask from "../assets/img/metamask.png"
+import BCXEx from "../assets/img/bcx-exchange.png"
+import Atoms from "../assets/img/atoms.webp"
+import BlockScout from "../assets/img/blockscout.jpeg"
 
 export default function EcoSystemProject() {
   const heroRef = useRef(null)
@@ -20,96 +25,68 @@ export default function EcoSystemProject() {
     setMounted(true)
   }, [])
 
-  const categories = ["All Categories", "DeFi", "NFT", "Gaming", "DEX", "Lending", "Yield Farming", "Bridge", "Tools"]
+  const categories = ["All Categories", "DeFi", "NFT", "Gaming", "DEX", "Lending", "Yield Farming", "Bridge", "Tools","Wallet","CEX"]
 
   const dApps = [
-    {
+  {
       id: 1,
-      name: "GateSwap",
-      description: "Decentralized exchange for seamless token swapping",
-      category: "DEX",
-      icon: "🔄",
-      color: "#3b82f6",
-      users: "12.5K",
-      tvl: "$2.4M",
-      featured: true,
+      name: "Keplr",
+      description: "Cosmos wallet for managing and interacting with blockchain assets.",
+      category: "Wallet",
+      icon: <img src={Keplr} alt="Keplr" className="w-8 h-8 rounded-md" />,
+      color: "#2e3148",
+      users: "18.4K",
+      tvl: "$4.2M",
+      url:"https://chains.keplr.app/",
+      featured: false,
     },
     {
       id: 2,
-      name: "GateLend",
-      description: "Lending and borrowing protocol with competitive rates",
-      category: "Lending",
-      icon: "🏦",
-      color: "#10b981",
-      users: "8.2K",
-      tvl: "$1.8M",
+      name: "MetaMask",
+      description: "Trusted EVM wallet for secure and seamless Web3 access.",
+      category: "Wallet",
+      icon: <img src={Metamask} alt="MetaMask" className="w-8 h-8 rounded-md" />,
+      color: "#f6851b",
+      users: "35.7K",
+      tvl: "$7.8M",
+      url:"https://metamask.io/",
       featured: true,
     },
     {
       id: 3,
-      name: "GateNFT",
-      description: "NFT marketplace for digital collectibles",
-      category: "NFT",
-      icon: "🎨",
-      color: "#8b5cf6",
-      users: "15.3K",
-      tvl: "$890K",
-      featured: false,
+      name: "BUYCEX",
+      description: "Fast, secure centralized exchange with BCX utility.",
+      category: "CEX",
+      icon: <img src={BCXEx} alt="BCX Exchange" className="w-8 h-8 rounded-md" />,
+      color: "white",
+      users: "35.7K",
+      url:"https://buycex.com",
+      tvl: "$7.8M",
+      featured: true,
     },
     {
       id: 4,
-      name: "GateFarm",
-      description: "Yield farming platform with auto-compounding",
-      category: "Yield Farming",
-      icon: "🌾",
-      color: "#f59e0b",
-      users: "6.7K",
-      tvl: "$3.2M",
-      featured: true,
-    },
-    {
-      id: 5,
-      name: "GatePlay",
-      description: "Blockchain gaming platform with P2E mechanics",
-      category: "Gaming",
-      icon: "🎮",
-      color: "#ef4444",
-      users: "22.1K",
-      tvl: "$1.1M",
-      featured: false,
-    },
-    {
-      id: 6,
-      name: "GateBridge",
-      description: "Cross-chain bridge for multi-chain assets",
-      category: "Bridge",
-      icon: "🌉",
-      color: "#06b6d4",
-      users: "9.8K",
-      tvl: "$5.6M",
-      featured: true,
-    },
-    {
-      id: 7,
-      name: "GateTools",
-      description: "Developer tools and analytics dashboard",
+      name: "Atom Scan",
+      description: "Explore Cosmos blockchain data and transactions easily.",
       category: "Tools",
-      icon: "🛠️",
+      icon: <img src={Atoms} alt="Atoms" className="w-8 h-8 rounded-md" />,
       color: "#84cc16",
       users: "4.3K",
       tvl: "N/A",
+      url:"https://atomscan.com/frontier/buycex",
       featured: false,
     },
     {
-      id: 8,
-      name: "GateVault",
-      description: "Secure multi-signature wallet solution",
-      category: "DeFi",
-      icon: "🔐",
-      color: "#6366f1",
-      users: "7.9K",
-      tvl: "$2.7M",
-      featured: false,
+      id: 5,
+      name: "Blockscout",
+      description: "Open-source explorer for EVM-compatible blockchain networks.",
+      category: "Tools",
+      icon: <img src={BlockScout} alt="BlockScout" className="w-8 h-8 rounded-md" />,
+      color: "white",
+      users: "35.7K",
+      url:"https://www.blockscout.com/",
+      tvl: "$7.8M",
+      featured: true,
     },
   ]
 
@@ -418,23 +395,50 @@ export default function EcoSystemProject() {
 
 
                   {/* Launch Button */}
-                  <motion.button
-                    className="w-full flex items-center justify-center gap-2 py-1.5 sm:py-3 rounded-xl font-medium transition-all duration-300 border-2 border-[#454545]"
-                    style={{
-                      backgroundColor: "transparent",
-                      borderColor: dapp.color,
-                      color: dapp.color,
-                    }}
-                    whileHover={{
-                      backgroundColor: dapp.color,
-                      color: "white",
-                      scale: 1.02,
-                    }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    Launch App
-                    <ExternalLink className="w-4 h-4" />
-                  </motion.button>
+                  {dapp.url ? (
+                    <a
+                      href={dapp.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block"
+                    >
+                      <motion.button
+                        className="w-full flex items-center justify-center gap-2 py-1.5 sm:py-3 rounded-xl font-medium transition-all duration-300 border-2 border-[#454545]"
+                        style={{
+                          backgroundColor: "transparent",
+                          borderColor: dapp.color,
+                          color: dapp.color,
+                        }}
+                        whileHover={{
+                          backgroundColor: dapp.color,
+                          color: "white",
+                          scale: 1.02,
+                        }}
+                        whileTap={{ scale: 0.98 }}
+                      >
+                        Launch App
+                        <ExternalLink className="w-4 h-4" />
+                      </motion.button>
+                    </a>
+                  ) : (
+                    <motion.button
+                      className="w-full flex items-center justify-center gap-2 py-1.5 sm:py-3 rounded-xl font-medium transition-all duration-300 border-2 border-[#454545]"
+                      style={{
+                        backgroundColor: "transparent",
+                        borderColor: dapp.color,
+                        color: dapp.color,
+                      }}
+                      whileHover={{
+                        backgroundColor: dapp.color,
+                        color: "white",
+                        scale: 1.02,
+                      }}
+                      whileTap={{ scale: 0.98 }}
+                    >
+                      Launch App
+                      <ExternalLink className="w-4 h-4" />
+                    </motion.button>
+                  )}
 
                   {/* Hover Glow */}
                   <motion.div
@@ -474,36 +478,7 @@ export default function EcoSystemProject() {
           )}
 
           {/* Stats Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={isAppsInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-            transition={{ duration: 0.8, delay: 1.5 }}
-            className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8"
-          >
-            {[
-              { icon: Zap, label: "Total dApps", value: "50+", color: "#efb81c" },
-              { icon: Users, label: "Active Users", value: "125K+", color: "#3b82f6" },
-              { icon: Coins, label: "Total TVL", value: "$18.2M", color: "#10b981" },
-            ].map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, y: 30 }}
-                animate={isAppsInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-                transition={{ duration: 0.6, delay: 1.7 + index * 0.1 }}
-                className="text-center p-4 sm:p-8  rounded-2xl shadow-lg border border-[#454545]"
-              >
-                <motion.div
-                  className="w-10 sm:w-16 h-10 sm:h-16 rounded-md sm:rounded-2xl flex items-center justify-center mx-auto mb-4"
-                  style={{ backgroundColor: `${stat.color}20` }}
-                  whileHover={{ scale: 1.1, rotate: 5 }}
-                >
-                  <stat.icon className="w-6 sm:w-8 h-6 sm:h-8" style={{ color: stat.color }} />
-                </motion.div>
-                <div className="text-3xl font-bold text-white mb-2">{stat.value}</div>
-                <div className="text-gray-600">{stat.label}</div>
-              </motion.div>
-            ))}
-          </motion.div>
+          
         </div>
 
         {/* Disclaimer */}

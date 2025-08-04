@@ -137,7 +137,7 @@ export default function HeroSection() {
                 e.currentTarget.style.boxShadow = "0 4px 6px -1px rgba(0, 0, 0, 0.1)"
               }}
             >
-              Start Building
+              Buy BCX
                   <ArrowRight className="ml-2 w-5 h-5" />
             </button>
             </Link>

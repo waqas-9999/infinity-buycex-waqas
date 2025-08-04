@@ -10,6 +10,7 @@ import WalletDashboard from '../views/Test';
 import WalletTransaction from '../components/LudoGame/WalletTransaction';
 import TransactionHistory from '../components/LudoGame/Transaction';
 import profile from '../views/profile';
+import PreSale from '../views/PreSale';
 import { Leaderboard } from '../components/LudoGame/Leaderboard';
 
 let routes = [
@@ -73,6 +74,11 @@ let routes = [
 		path:'/leaderboard',
 		component: Leaderboard,
 		layout: 'main'
+	},
+	{
+		path: '/presale',
+		component: PreSale,
+		layout: 'main',
 	}
 	
 ];

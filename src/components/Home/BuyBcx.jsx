@@ -130,7 +130,7 @@ export default function BuyBcx() {
               <div className="flex items-center gap-6">
                 {/* Token Icon */}
                 <motion.div
-                  className="w-10 h-10 lg:w-20 lg:h-20 rounded-md sm:rounded-2xl flex items-center justify-center relative"
+                  className="w-16 h-16 lg:w-20 lg:h-20 rounded-md sm:rounded-2xl flex items-center justify-center relative"
                   style={{ backgroundColor: "#efb81c20" }}
                   animate={
                     isInView
@@ -141,7 +141,7 @@ export default function BuyBcx() {
                   }
                   transition={{ duration: 3, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 1.5 }}
                 >
-                  <img src={Bcx} alt='Bcx' className="w-4 h-4 lg:w-10 lg:h-10" />
+                  <img src={Bcx} alt='Bcx' className="w-10 h-8 lg:w-12 lg:h-10" />
 
                   {/* Rotating Ring */}
                   <motion.div

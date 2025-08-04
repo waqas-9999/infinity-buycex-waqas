@@ -29,7 +29,7 @@ export function Leaderboard() {
 
     return (
         <>
-            <div className="chewy-regular bg-white p-2 relative overflow-hidden">
+            <div className="chewy-regular mx-auto bg-white p-2 relative overflow-hidden">
                 <div className="relative z-10 w-full max-w-xl">
                     <div className="flex items-center ">
                         <img src={winner} alt="Winner" className="w-16 h-[3rem]" />

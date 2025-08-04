@@ -84,6 +84,7 @@ export default function Navbar() {
                     name: "Staking",
                     href: "#",
                     description: "Earn via staking",
+                    comingSoon: true,
                 },
             ],
         },
